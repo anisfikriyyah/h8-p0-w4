@@ -7,6 +7,7 @@ function shoppingTime(memberId, money) {
   } else {
     var buyer = {
         memberId: memberId,
+        money: money,
         listPurchased: [],
         changeMoney: 0
       }
