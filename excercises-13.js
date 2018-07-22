@@ -5,10 +5,7 @@ function countProfit(shoppers) {
                         ['Sweater Uniklooh', 175000, 1]
                      ]
                   
-  if (shoppers.length === 0){
-    return shoppers
-  }
-
+  
   var namaShopper = []
   var namaShopper1 = []
   var namaShopper2 = []
@@ -37,6 +34,9 @@ function countProfit(shoppers) {
         totalBayar2 += daftarBarang[2][1] * shoppers[i].amount
       }
     } 
+  }
+  if (shoppers.length === 0){
+    return shoppers
   }
                    
   var list = [
