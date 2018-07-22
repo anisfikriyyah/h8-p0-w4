@@ -17,7 +17,7 @@ function countProfit(shoppers) {
   var totalBayar2 = 0
   
   
-  for (var i in shoppers) {
+  for (var i=0; i<shoppers.length; i++) {
     if (shoppers[i].product === daftarBarang[0][0]){
       if (daftarBarang[0][2] >= shoppers[i].amount){
         namaShopper.push(shoppers[i].name)

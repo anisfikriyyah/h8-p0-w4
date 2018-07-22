@@ -1,6 +1,16 @@
 function sorting(arrNumber) {
     // code di sini
-   arrNumber.sort(function(a, b){return a<b})
+  //  arrNumber.sort(function(a, b){return a<b})
+
+  for( var i=0; i<arrNumber.length; i++){
+    for(var j=0; j<i; j++){
+      if ( arrNumber[i] > arrNumber[j]){
+        var x = arrNumber[i]
+        arrNumber[i] = arrNumber[j]
+        arrNumber[j] = x
+      }
+    }
+  }
     return arrNumber
   }
   
